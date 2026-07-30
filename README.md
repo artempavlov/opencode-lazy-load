@@ -115,3 +115,17 @@ MIT
 ## Construido con
 
 Desarrollo asistido por IA (OpenCode + Mimo v2.5).
+
+## Atribuciones
+
+Originalmente basado en [omarwaly-ai/opencode-lazy-loading](https://github.com/omarwaly-ai/opencode-lazy-loading) (MIT). Se fusionaron las siguientes mejoras:
+
+- **DSML parsing**: Convierte tool calls de modelos DeepSeek/Qwen a formato estándar
+- **Schema normalization**: Corrige argumentos con tipos incorrectos (strings → booleans/números)
+- **Case-insensitive resolution**: Resolución de nombres de herramientas sin importar mayúsculas/minúsculas
+- **Native tool index tracking**: Tracking robusto de índices en tool calls interleaved
+
+### Changelog
+
+- **2026-07-30**: Merge con omarwaly-ai — DSML, schema normalization, case-insensitive, native tracking
+- **2026-07-29**: Versión inicial con ALWAYS_VISIBLE, __list__, logging
